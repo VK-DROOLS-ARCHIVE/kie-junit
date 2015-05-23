@@ -26,6 +26,7 @@ public class RuleFiredListener extends DefaultAgendaEventListener {
     @Override
     public void afterMatchFired(AfterMatchFiredEvent event) {
         String ruleName = event.getMatch().getRule().getName();
+//        System.out.println("ruleName == "+ruleName);
         Integer count = rulesFiredMap.get(ruleName);
         if ( count == null) {
             count = 0;

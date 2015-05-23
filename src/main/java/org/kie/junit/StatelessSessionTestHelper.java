@@ -4,7 +4,6 @@ import org.junit.runners.model.InitializationError;
 import org.kie.api.runtime.StatelessKieSession;
 import org.kie.junit.support.RuleFiredListener;
 
-import java.util.Iterator;
 import java.util.Map;
 
 public final class StatelessSessionTestHelper extends KieTestHelper {

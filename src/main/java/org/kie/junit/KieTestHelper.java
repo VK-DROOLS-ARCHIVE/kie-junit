@@ -4,7 +4,6 @@ import org.drools.core.io.impl.InputStreamResource;
 import org.junit.runners.model.InitializationError;
 import org.kie.api.KieBase;
 import org.kie.api.builder.ReleaseId;
-import org.kie.api.io.Resource;
 import org.kie.api.io.ResourceType;
 
 import java.io.InputStream;
@@ -33,6 +32,10 @@ public abstract class KieTestHelper {
 
     public static StatelessSessionTestHelper newStatelessSession(){
         return new StatelessSessionTestHelper();
+    }
+
+    public static StatefulSessionTestHelper newStatefulSession(){
+        return new StatefulSessionTestHelper();
     }
 
     public KieTestHelper addKieResource(ResourceType resourceType, InputStream inputStream) throws InitializationError {
